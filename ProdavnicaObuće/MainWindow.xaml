@@ -1,0 +1,36 @@
+﻿<Window x:Class="ProdavnicaObuće.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuće"
+        mc:Ignorable="d"
+        Title="Prodavnica obuće" Height="350" Width="700" Background="Goldenrod">
+        
+    <Grid>
+        <DataGrid x:Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto" IsReadOnly="True"
+                  AlternatingRowBackground="Gold" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnZaposleleni" Content="Zaposleni" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnZaposleni_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnKupci" Content="Kupci" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnKupci_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnObuca" Content="Obuca" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnObuca_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnModeli" Content="Modeli" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnModeli_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnMarke" Content="Marke" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnMarke_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnTipovi" Content="Tipovi" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnTipovi_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnNarudzbine" Content="Narudzbine" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnNarudzbine_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnPotvrde" Content="Potvrde" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="30" Click="btnPotvrde_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+
+
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="50" Height="30" Click="btnDodaj_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="50" Height="30" Click="btnIzmeni_Click" RenderTransformOrigin="-8.743,-4.048" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+            <Button x:Name="btnObrisi" Content="Obrisi" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="50" Height="30" Click="btnObrisi_Click" BorderBrush="Indigo" BorderThickness="4" Background="Azure"/>
+
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProdavnicaObuće.Forme.FrmNarudzbina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuće.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni narudzbinu" Height="300" Width="300">
+    <Grid>
+        <Label Content="Datum:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dpDatum" HorizontalAlignment="Left" Margin="140,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cijena narudzbine:" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCijena" HorizontalAlignment="Left" Margin="140,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Kupac:" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top" />
+        <Label Content="Zaposleni:" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbKupac" HorizontalAlignment="Left" Margin="140,80,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Kupac" SelectedValuePath="kupacID"/>
+        <ComboBox x:Name="cbZaposleni" HorizontalAlignment="Left" Margin="140,110,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Zaposleni" SelectedValuePath="zaposleniID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,175,0,0" Width="75" VerticalAlignment="Top" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="180,175,0,0" Width="75" VerticalAlignment="Top" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>

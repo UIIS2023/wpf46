@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProdavnicaObuće.Forme.FrmObuca"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuće.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni obucu" Height="330" Width="300">
+    <Grid>
+        <Label Content="Cijena:" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCijena" HorizontalAlignment="Left" Margin="140,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Velicina:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtVelicina" HorizontalAlignment="Left" Margin="140,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Boja:" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoja" HorizontalAlignment="Left" Margin="140,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Model:" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top" />
+        <Label Content="Tip obuce:" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbModel" HorizontalAlignment="Left" Margin="140,110,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Model" SelectedValuePath="modelID"/>
+        <Label Content="Marka:" HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbMarka" HorizontalAlignment="Left" Margin="140,170,0,0" VerticalAlignment="Top" Width="120"
+                  DisplayMemberPath="Marka" SelectedValuePath="markaID"/>
+        <ComboBox x:Name="cbTipObuce" HorizontalAlignment="Left" Margin="140,140,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Tip" SelectedValuePath="tipObuceID"/>
+        <Label Content="Narudzbina:" HorizontalAlignment="Left" Margin="30,200,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbNarudzbina" HorizontalAlignment="Left" Margin="140,200,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="datum" SelectedValuePath="narudzbinaID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,245,0,0" Width="75" VerticalAlignment="Top" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="180,245,0,0" Width="75" VerticalAlignment="Top" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>
